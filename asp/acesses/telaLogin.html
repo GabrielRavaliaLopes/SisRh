@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="..\js\validaInserir.js"></script>
+    <title>Login</title>
+    <link rel="stylesheet" href="\css\styleLogin.css">
+</head>
+<body>
+    <main>
+        <!--Imagem da logo lado esquerdo-->
+        <section><img src="\asp\img\Logo-ofc1.jpg" alt="logo" ></section>
+        <br>
+
+        <!--Campo de Login-->
+        <section class="Clogin"> 
+            <section>
+            <img src="\asp\img/person-solid.svg" alt="person" height="15px">           
+            <label for="title">Nome</label>
+            </section>
+            <div class="textBox">
+                <input type="text" name="Usuario" id="usuario" value="">
+            </div>
+            <section>
+                <img src="\asp\img/lock-solid.svg" alt="look" height="15px">
+            <label for="title">Senha</label>
+            </section> 
+            <div class="textBox">
+                <input type="password" name="Senha" id="senha" value="">
+            </div>
+
+            <div class="buttonlogin">
+                    <button style="height: 25px; width: 80px;" onclick="logar(); return false">Entrar</button>
+
+                    <a href="/asp/acesses/telaCadastro.html"><input class="btn-novo" type="submit" value="Novo"></a>
+            </div>
+
+            <div class="esqueci-senha">
+                <a onclick="window.open ('/asp/acesses/telaEsqueciSenha.html','_blank','width=400, height=600')"><p> Esqueci a senha</p></a>
+            </div>
+            
+        </section>
+    </main>
+    <footer>
+        <div class="rodape">
+        <a class="TermoDeUso" onclick="window.open ('/asp/acesses/TelatermoDeUso.html','_blank','width=400, height=600')"><p>Termo de uso e Politica de Privacidade</p></a>
+        </div>
+    </footer>
+
+    <script>       
+        function logar(){
+
+            var login = document.getElementById('usuario').value;
+            var senha = document.getElementById('senha').value; 
+
+            if(login == "admin" && senha == "admin"){
+                alert('Sucesso');
+                location.href = "/asp/acesses/telaPagamentoMensal.html";  
+            }else{
+                alert('Usuario ou senha incorretos')
+            }
+        }
+    </script>
+
+</body>
+</html>

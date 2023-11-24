@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background-color: #637CFE;
+    }
+
+    main{
+        height: 100px;
+    }
+
+
+form{
+    width: 300px;
+    margin: 200px auto;
+    text-align: center;
+}
+
+input{
+    display: block;
+    margin: 12px auto;
+    padding: 2px;
+    width: 250px;
+    height: 30px;
+    border-radius: 1.1em;
+    border-style: none;
+} 

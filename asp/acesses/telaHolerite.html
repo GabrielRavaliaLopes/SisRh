@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/telaHolerite.css">
+    <title>Holerite</title>
+</head>
+<body>
+    <header>
+        <div>
+        <a href="/asp/acesses/telaLogin.html"><img src="/asp/img/logo-nav.jpg" alt="Logo-Sisrh"></a>
+        </div>   
+        
+
+        <div class="menu">
+        <a href="#" class="btn-abrir" onclick="abrirMenu()">&#9776;</a>
+
+        <nav id="menu">
+        
+
+            <ul>
+                <li><a class="btn-fechar" href="#" onclick="fecharMenu()"> Fechar  &times;</a></li>
+                <li><a href="/asp/acesses/telaHolerite.html"> Holerite</li></a>
+                <li><a href="/asp/acesses/telaInformeRendimento.html"> Informe de rendimento</li></a>
+                <li><a href="/asp/acesses/telaADDDados.html">Atualização de Dados</li></a>
+                <li><a href="/asp/acesses/telaPagamentoMensal.html">Pagamento Mensal</li></a>
+                <li><a href="/asp/acesses/telaLogin.html"> Sair</li></a>
+            </ul>
+        </nav>
+    </div>
+    </header>
+
+    <main>
+        <section>
+            <!--Escolher Mês-->
+            <form>
+                <h1></h1>
+            </form>
+        </section>
+        <section>
+            <!--Holerite-->
+        </section>
+    </main>
+
+
+    <footer>
+        <!--Baixe o PDF-->
+    </footer>
+
+
+    <script>
+        function abrirMenu(){
+            document.getElementById('menu').style.width = '250px'
+
+        }
+
+        function fecharMenu(){
+            document.getElementById('menu').style.width = '0px'
+        }
+    </script>
+</body>
+</html>

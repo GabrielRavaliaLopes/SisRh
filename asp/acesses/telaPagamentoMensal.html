@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PagamentoMensal</title>
+    <link rel="stylesheet" href="/css/telaPagamentoMensal.css">
+</head>
+<body>
+    <header>
+        <div>
+        <a href="/asp/acesses/telaLogin.html"><img src="/asp/img/logo-nav.jpg" alt="Logo-Sisrh"></a>
+        </div>   
+        
+
+        <div class="menu">
+        <a href="#" class="btn-abrir" onclick="abrirMenu()">&#9776;</a>
+
+        <nav id="menu">
+        
+
+            <ul>
+                <li><a class="btn-fechar" href="#" onclick="fecharMenu()"> Fechar  &times;</a></li>
+                <li><a href="/asp/acesses/telaHolerite.html"> Holerite</li></a>
+                <li><a href="/asp/acesses/telaInformeRendimento.html"> Informe de rendimento</li></a>
+                <li><a href="/asp/acesses/telaADDDados.html">Atualização de Dados</li></a>
+                <li><a href="/asp/acesses/telaPagamentoMensal.html">Pagamento Mensal</li></a>
+                <li><a href="/asp/acesses/telaLogin.html"> Sair</li></a>
+            </ul>
+        </nav>
+    </div>
+    </header>
+
+    <main>
+        <section class="side-right">
+            <section class="fild-perfil">
+                <div>
+                    <!--campo perfil-->
+                    <img src="/asp/img/att dados.svg" alt="Foto" style="height: 70; width: 70px;">
+                    <h1>Gabriel R Lopes </h1>
+                    <p>Desenvolvedor</p>
+                    <br>
+                </div>
+            </section>
+            <section class="fild-datas">
+                <div class="fild-infos-yield">
+                    <!--Campo Inform de Rendimento-->
+                    <img src="/asp/img/books.svg" alt="Informe de rendimento" style="width: 50px; height: 50px;">
+                    <a href="/asp/acesses/telaInformeRendimento.html" style="text-decoration: none;"><p>Informação de Rendimento</p></a>
+                    
+                </div>
+                <div class="fild-payslip">
+                    <!--Consulta Holerite-->
+                    <img src="/asp/img/Holerite.svg" alt="Consultar holerite" style="height: 50px;width: 50px;">
+                    <a href="/asp/acesses/telaHolerite.html" style="text-decoration: none;"><p>Holerite</p></a>
+                </div>
+                <div class="fild-add-datas">
+                    <!--Atualizações de dados-->
+                    <img src="/asp/img/att dados.svg" alt="atualizar dados" style="height: 50px;width: 50px;">
+                    <a href="/asp/acesses/telaADDDados.html" style="text-decoration: none;"><p>Atualização de Dados</p></a>
+                </div>
+            </section>
+        </section>
+        <section class="side-left">
+            <section class="fild-graficos">
+                <div class="grafico-01">
+                    <!--Grafico 1 grand-->
+                    <img src="/asp/img/grafico.svg" alt="Grafico um" style="height: 200px; width: 200px;">
+                    
+                    <div class="dados-graficos">
+                    <h2>Março 2023 - Pagamento mensal</h2>
+                    <p>Bruto <br> R$ 5.000,00</p>
+
+                    <p>Desconto <br> 5.000,00</p>
+
+                    <div>
+                        <p>Liquido a receber R$ 4.500,00</p>
+                    </div>
+                    </div>
+                </div>
+                <section class="graficos-02-03">
+                    <div class="grafico-02">
+                        <!--Grafico 2 medio-->
+                        <img src="/asp/img/grafico.svg" alt="Grafico um" style="height: 100px; width: 100px;">
+                        <p>abri</p>
+                    </div>
+                    <div class="grafico-03">
+                        <!--Grafico 3 medio-->
+                        <img src="/asp/img/grafico.svg" alt="Grafico um" style="height: 100px; width: 100px;">
+                        <p>abri</p>
+                    </div> 
+                </section>
+            </section>
+        </section>
+    </main>
+
+    <script>
+        function abrirMenu(){
+            document.getElementById('menu').style.width = '250px'
+
+        }
+
+        function fecharMenu(){
+            document.getElementById('menu').style.width = '0px'
+        }
+    </script>
+</body>
+</html>

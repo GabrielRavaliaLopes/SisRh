@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background-color: #637CFD;
+    
+    
+}
+
+main{
+    margin: 200px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.Cesqueci-Senha{
+    color: white;
+    border: 1px solid black;
+    background-color: darkslateblue;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    border-radius: 1.3rem;
+    box-shadow: black 10px;
+}
+
+.Cesqueci-Senha > label{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.0em;
+}
+
+.Cesqueci-Senha > .btn-alterarDados > button{
+    border-radius: 1.3rem;
+    padding: 3px;
+}
+
+
+
+input{
+    border-radius: 1.3rem;
+    padding: 3px;
+    border-style: none;
+}
+
+.btn-alterarDados{
+    justify-content: center;
+    display: flex;
+    margin-top: 5%;
+}
+
+.btn-alterarDados :hover{
+    cursor: pointer;
+    
+}
+
+
